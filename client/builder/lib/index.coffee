@@ -256,8 +256,6 @@ module.exports = class Haydar extends events.EventEmitter
       ignoreWatch : ['**/node_modules/**']
       noParse     : [
         'jquery',
-        'underscore',
-        'lodash',
         'emojify',
         'kd-shim-algoliasearch', 'algoliasearch',
         'accounting',
