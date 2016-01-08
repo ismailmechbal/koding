@@ -1706,7 +1706,7 @@ module.exports = class JUser extends jraphical.Module
     jwt = require 'jsonwebtoken'
 
     # uses 'HS256' as default for signing
-    options.expiresInMinutes ?= confirmExpiresInMinutes
+    options.expiresIn ?= confirmExpiresInMinutes * 60 # expiresIn is in seconds
 
     return jwt.sign data, secret, options
 
