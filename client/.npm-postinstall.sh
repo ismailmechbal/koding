@@ -11,11 +11,9 @@ touch node_modules/.npm-install.timestamp
 [ "$WERCKER_GIT_REPOSITORY" != "koding" ] && exit 0
 [ "$WERCKER_GIT_BRANCH" != "master" ] && exit 0
 
-UPDATE_WERCKER_NODE_MODULES=../scripts/wercker/update-node-modules
+pushd $(dirname $0)
 
-$UPDATE_WERCKER_NODE_MODULES
-$UPDATE_WERCKER_NODE_MODULES builder
-$UPDATE_WERCKER_NODE_MODULES landing
+touch node_modules/.npm-install.timestamp
 
 popd
 
