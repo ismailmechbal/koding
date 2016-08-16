@@ -21,17 +21,17 @@
 
 module.exports = [
 
-  # [
-  #   { name: 'dashboard myaccount' }
-  #   { name: 'dashboard stacks' }
-  #   { name: 'dashboard virtualmachines' }
-  #   { name: 'dashboard myteam' }
-  #   { name: 'dashboard credentials' }
-  #   { name: 'dashboard utilities' }
-  #   { name: 'dashboard onboarding' }
-  #   { name: 'dashboard sidebar' }
-  #   { name: 'dashboard teambilling' }
-  # ]
+  [
+    { name: 'dashboard myaccount' }
+    { name: 'dashboard stacks' }
+    { name: 'dashboard virtualmachines' }
+    { name: 'dashboard myteam' }
+    { name: 'dashboard credentials' }
+    { name: 'dashboard utilities' }
+    { name: 'dashboard onboarding' }
+    { name: 'dashboard sidebar' }
+    { name: 'dashboard teambilling' }
+  ]
 
   [
     { name: 'register' }
@@ -39,24 +39,24 @@ module.exports = [
     # { name: 'unittests' }
   ]
 
-  # [
-  #   { name: 'ide file' }
-  #   { name: 'ide folder' }
-  # ]
+  [
+    { name: 'ide file' }
+    { name: 'ide folder' }
+  ]
 
-  # [
-  #   # { name: 'ide workspace' }
-  #   { name: 'ide layout' }
-  # ]
+  [
+    # { name: 'ide workspace' }
+    { name: 'ide layout' }
+  ]
 
-  # [
-  #   { name: 'ide search' }
-  #   { name: 'ide general' }
-  # ]
+  [
+    { name: 'ide search' }
+    { name: 'ide general' }
+  ]
 
-  # [
-  #   { name: 'ide terminal' }
-  # ]
+  [
+    { name: 'ide terminal' }
+  ]
 
   # [
   #   { name: 'collaboration collaborationsingle'}
