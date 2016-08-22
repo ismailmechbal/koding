@@ -632,9 +632,9 @@ module.exports =
     browser
       .click '#main-sidebar'
       .waitForElementVisible '#kdmaincontainer.with-sidebar #main-sidebar .logo-wrapper .team-name', 20000
+      .pause 2000
       .click '#kdmaincontainer.with-sidebar #main-sidebar .logo-wrapper .team-name'
-      .waitForElementVisible '.SidebarMenu.kdcontextmenu .kdlistview-contextmenu.default', 20000
-      .waitForElementVisible '.SidebarMenu.kdcontextmenu .kdlistitemview-contextitem.default', 2000
+      .waitForElementVisible '.SidebarMenu.kdcontextmenu .kdlistview-contextmenu.default', 60000
       .click '.SidebarMenu.kdcontextmenu .kdlistitemview-contextitem.default:nth-of-type(4)'
       .pause 2000, -> callback()
 
