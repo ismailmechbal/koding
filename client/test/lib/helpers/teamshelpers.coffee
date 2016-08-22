@@ -631,8 +631,9 @@ module.exports =
 
     browser
       .click '#main-sidebar'
+      .click '.Sidebar-ReactView'
+      .click '.Sidebar-ReactView .activity-sidebar'
       .waitForElementVisible '#kdmaincontainer.with-sidebar #main-sidebar .logo-wrapper .team-name', 20000
-      .pause 2000
       .click '#kdmaincontainer.with-sidebar #main-sidebar .logo-wrapper .team-name'
       .waitForElementVisible '.SidebarMenu.kdcontextmenu .kdlistview-contextmenu.default', 60000
       .click '.SidebarMenu.kdcontextmenu .kdlistitemview-contextitem.default:nth-of-type(4)'
